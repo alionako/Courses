@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="CatYears" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nff-nS-e89">
+                                <rect key="frame" x="184" y="237.5" width="6.5" height="33"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="27"/>
+                                <color key="textColor" red="0.25098040700000002" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="bottom" placeholder="Enter your cat age" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="YRy-af-0th">
+                                <rect key="frame" x="125" y="130.5" width="127" height="18"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="15"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="How old is your cat?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZzE-sX-dEf">
+                                <rect key="frame" x="107.5" y="104.5" width="160" height="21"/>
+                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="18"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="In cat years, your cat is" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ME5-uT-DjI">
+                                <rect key="frame" x="101" y="217.5" width="172.5" height="21"/>
+                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="17"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cat years" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tdp-vA-0hl">
+                                <rect key="frame" x="125" y="28" width="125.5" height="57.5"/>
+                                <fontDescription key="fontDescription" name="PartyLetPlain" family="Party LET" pointSize="49"/>
+                                <color key="textColor" red="0.93059724570000002" green="0.2745210528" blue="0.18561512229999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cat" translatesAutoresizingMaskIntoConstraints="NO" id="8Yd-VV-ydw">
+                                <rect key="frame" x="87" y="295.5" width="200" height="200"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wtK-iS-5mj">
+                                <rect key="frame" x="107" y="159.5" width="160" height="33"/>
+                                <color key="backgroundColor" red="0.93095570802688599" green="0.28426283597946167" blue="0.19873151183128357" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                <state key="normal" title="Submit">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="submit:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ijq-pz-9r9"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="YRy-af-0th" firstAttribute="top" secondItem="ZzE-sX-dEf" secondAttribute="bottom" constant="5" id="0ul-9E-Y1C"/>
+                            <constraint firstItem="ME5-uT-DjI" firstAttribute="top" secondItem="wtK-iS-5mj" secondAttribute="bottom" constant="25" id="9dy-uG-Md1"/>
+                            <constraint firstItem="wtK-iS-5mj" firstAttribute="width" secondItem="ZzE-sX-dEf" secondAttribute="width" id="D92-Jz-Qro"/>
+                            <constraint firstItem="nff-nS-e89" firstAttribute="top" secondItem="ME5-uT-DjI" secondAttribute="bottom" constant="-1" id="DXx-g2-Yb8"/>
+                            <constraint firstItem="8Yd-VV-ydw" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="E9V-9p-5TZ"/>
+                            <constraint firstItem="ZzE-sX-dEf" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="GNa-dG-81d"/>
+                            <constraint firstItem="ME5-uT-DjI" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="HXe-ed-qT1"/>
+                            <constraint firstItem="ZzE-sX-dEf" firstAttribute="top" secondItem="Tdp-vA-0hl" secondAttribute="bottom" constant="19" id="LOV-Qi-JIU"/>
+                            <constraint firstItem="YRy-af-0th" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="1" id="cX9-Gr-Us5"/>
+                            <constraint firstItem="nff-nS-e89" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="eh2-oj-70n"/>
+                            <constraint firstItem="wtK-iS-5mj" firstAttribute="top" secondItem="YRy-af-0th" secondAttribute="bottom" constant="11" id="ehb-jM-Pgn"/>
+                            <constraint firstItem="8Yd-VV-ydw" firstAttribute="top" secondItem="nff-nS-e89" secondAttribute="bottom" constant="25" id="mb7-HO-LZd"/>
+                            <constraint firstItem="wtK-iS-5mj" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="qh9-QW-tNd"/>
+                            <constraint firstItem="Tdp-vA-0hl" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="r4L-6i-LLV"/>
+                            <constraint firstItem="Tdp-vA-0hl" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="y28-Nf-elg"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="image" destination="8Yd-VV-ydw" id="sxP-T1-FU6"/>
+                        <outlet property="label" destination="nff-nS-e89" id="G0T-uG-Z5q"/>
+                        <outlet property="submitButton" destination="wtK-iS-5mj" id="puJ-EC-xRD"/>
+                        <outlet property="textField" destination="YRy-af-0th" id="HU9-p0-Jlf"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="138.98050974512745"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="cat" width="200" height="200"/>
+    </resources>
+</document>

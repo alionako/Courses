@@ -1,0 +1,27 @@
+[
+    {
+        "action": {
+            "type": "block"
+        },
+        "trigger": {
+            "url-filter": ".*instagram.*"
+        }
+    },
+    {
+        "action": {
+            "type": "block"
+        },
+        "trigger": {
+            "url-filter": "https?://(www.)?(m.)?facebook.*"
+        }
+     },
+    {
+        "action": {
+            "type" : "css-display-none",
+            "selector": "a[href*='m.facebook.*'"
+        },
+        "trigger": {
+            "url-filter": ".*"
+        }
+    }
+]
