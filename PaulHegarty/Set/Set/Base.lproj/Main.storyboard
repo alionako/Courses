@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Set View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="SetViewController" customModule="Set" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ohV-fu-cAS">
+                                <rect key="frame" x="20" y="832" width="73" height="30"/>
+                                <state key="normal" title="New game">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="startNewGame:" destination="BYZ-38-t0r" eventType="touchUpInside" id="X4X-KJ-veZ"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="798-tW-tWA">
+                                <rect key="frame" x="0.0" y="60" width="414" height="745"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="czZ-Bj-CjG" appends="YES" id="OMZ-3a-hxQ"/>
+                                    <outletCollection property="gestureRecognizers" destination="5To-2Y-PES" appends="YES" id="dpc-Pz-VB3"/>
+                                </connections>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Rg9-DY-cmJ">
+                                <rect key="frame" x="323" y="812" width="75" height="50"/>
+                                <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="75" id="e6x-Im-VMq"/>
+                                    <constraint firstAttribute="height" constant="50" id="wEd-D1-bab"/>
+                                </constraints>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="Ch8-Ug-df9" appends="YES" id="jfr-9I-yJw"/>
+                                </connections>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="ohV-fu-cAS" firstAttribute="top" secondItem="798-tW-tWA" secondAttribute="bottom" constant="27" id="P8r-S1-RAA"/>
+                            <constraint firstItem="ohV-fu-cAS" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="TR4-b2-rEz"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Rg9-DY-cmJ" secondAttribute="trailing" constant="16" id="TV1-sn-zDp"/>
+                            <constraint firstItem="798-tW-tWA" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailing" id="al2-Ma-DW9"/>
+                            <constraint firstItem="ohV-fu-cAS" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="imG-C4-jSc"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Rg9-DY-cmJ" secondAttribute="bottom" id="kjP-st-W4E"/>
+                            <constraint firstItem="798-tW-tWA" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="16" id="lzk-QP-LKm"/>
+                            <constraint firstItem="798-tW-tWA" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="tux-Lx-iJI"/>
+                            <constraint firstItem="Rg9-DY-cmJ" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="ohV-fu-cAS" secondAttribute="trailing" constant="5" id="w7j-kI-gif"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="buttonStackView" destination="Rg9-DY-cmJ" id="6a1-nO-GzJ"/>
+                        <outlet property="gridView" destination="798-tW-tWA" id="LtM-Uf-yXy"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="down" id="czZ-Bj-CjG">
+                    <connections>
+                        <action selector="addMoreCards:" destination="BYZ-38-t0r" id="BA4-8H-QW0"/>
+                    </connections>
+                </swipeGestureRecognizer>
+                <rotationGestureRecognizer id="5To-2Y-PES">
+                    <connections>
+                        <action selector="shuffleCards:" destination="BYZ-38-t0r" id="ABH-Zn-Rjw"/>
+                    </connections>
+                </rotationGestureRecognizer>
+                <tapGestureRecognizer id="Ch8-Ug-df9">
+                    <connections>
+                        <action selector="addMoreCards:" destination="BYZ-38-t0r" id="NKN-y4-ZwD"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="-57.971014492753625" y="137.94642857142856"/>
+        </scene>
+    </scenes>
+</document>
